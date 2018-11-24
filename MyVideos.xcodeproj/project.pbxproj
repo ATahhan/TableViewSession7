@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E89808F921A635CB00DCEF15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89808F821A635CB00DCEF15 /* ViewController.swift */; };
 		F52AB253212D33A900AD84FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52AB252212D33A900AD84FB /* AppDelegate.swift */; };
 		F52AB258212D33A900AD84FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52AB256212D33A900AD84FB /* Main.storyboard */; };
 		F52AB25A212D33AA00AD84FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52AB259212D33AA00AD84FB /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E89808F821A635CB00DCEF15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F52AB24F212D33A900AD84FB /* MyVideos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVideos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52AB252212D33A900AD84FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52AB257212D33A900AD84FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 				F52AB259212D33AA00AD84FB /* Assets.xcassets */,
 				F52AB25B212D33AA00AD84FB /* LaunchScreen.storyboard */,
 				F52AB25E212D33AA00AD84FB /* Info.plist */,
-				E89808F821A635CB00DCEF15 /* ViewController.swift */,
 			);
 			path = MyVideos;
 			sourceTree = "<group>";
@@ -168,7 +165,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E89808F921A635CB00DCEF15 /* ViewController.swift in Sources */,
 				F52AB267212D34AC00AD84FB /* VideosTableViewController.swift in Sources */,
 				F52AB269212D382D00AD84FB /* VideoTableViewCell.swift in Sources */,
 				F52AB265212D33ED00AD84FB /* Video.swift in Sources */,
