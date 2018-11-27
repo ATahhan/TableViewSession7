@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -82,7 +83,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwr-K6-cc6">
-                                                    <rect key="frame" x="67" y="207" width="89" height="21"/>
+                                                    <rect key="frame" x="67" y="207.5" width="88.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -95,15 +96,48 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLM-m7-s9P">
+                                                    <rect key="frame" x="67.5" y="61" width="240" height="128"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LCb-Zg-B5G">
+                                                            <rect key="frame" x="12" y="12" width="216" height="104"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="253" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="Ybm-6w-o5Y">
+                                                                    <rect key="frame" x="77" y="0.0" width="62.5" height="62.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="Ybm-6w-o5Y" secondAttribute="height" id="OCt-Gs-U2J"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="752" text="Watched" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lig-lQ-7mo">
+                                                                    <rect key="frame" x="51.5" y="70.5" width="113.5" height="33.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="LCb-Zg-B5G" secondAttribute="trailing" constant="12" id="M26-IF-cNI"/>
+                                                        <constraint firstItem="LCb-Zg-B5G" firstAttribute="top" secondItem="KLM-m7-s9P" secondAttribute="top" constant="12" id="QAp-uk-ytt"/>
+                                                        <constraint firstAttribute="width" constant="240" id="eQ9-Xa-NSv"/>
+                                                        <constraint firstAttribute="height" constant="128" id="fEg-Wx-CRw"/>
+                                                        <constraint firstAttribute="bottom" secondItem="LCb-Zg-B5G" secondAttribute="bottom" constant="12" id="tz7-gJ-nH9"/>
+                                                        <constraint firstItem="LCb-Zg-B5G" firstAttribute="leading" secondItem="KLM-m7-s9P" secondAttribute="leading" constant="12" id="ysc-Kw-NEO"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="Ch1-gx-FQy" firstAttribute="leading" secondItem="eZ3-ZI-Spt" secondAttribute="leading" constant="7" id="2IO-Kx-NIk"/>
+                                                <constraint firstItem="KLM-m7-s9P" firstAttribute="centerY" secondItem="eZ3-ZI-Spt" secondAttribute="centerY" id="5Rf-V9-YU5"/>
                                                 <constraint firstAttribute="bottom" secondItem="Xwr-K6-cc6" secondAttribute="bottom" constant="21.5" id="6zI-Mb-f6d"/>
                                                 <constraint firstItem="tzp-A4-tKC" firstAttribute="top" secondItem="eZ3-ZI-Spt" secondAttribute="top" constant="16" id="8TW-Nv-0sh"/>
                                                 <constraint firstItem="Xwr-K6-cc6" firstAttribute="leading" secondItem="eZ3-ZI-Spt" secondAttribute="leading" constant="67" id="904-TZ-ePO"/>
                                                 <constraint firstAttribute="trailing" secondItem="tzp-A4-tKC" secondAttribute="trailing" constant="16" id="MPQ-3p-cHZ"/>
                                                 <constraint firstAttribute="bottom" secondItem="Ch1-gx-FQy" secondAttribute="bottom" id="bbE-gM-X1X"/>
+                                                <constraint firstItem="KLM-m7-s9P" firstAttribute="centerX" secondItem="eZ3-ZI-Spt" secondAttribute="centerX" id="chN-Ge-LKl"/>
                                                 <constraint firstItem="tzp-A4-tKC" firstAttribute="leading" secondItem="eZ3-ZI-Spt" secondAttribute="leading" constant="16" id="nDS-gH-WCa"/>
                                                 <constraint firstAttribute="bottom" secondItem="tzp-A4-tKC" secondAttribute="bottom" constant="8" id="t4D-Mb-brn"/>
                                             </constraints>
@@ -112,6 +146,8 @@
                                         <connections>
                                             <outlet property="thumbnailImageView" destination="tzp-A4-tKC" id="Wfb-CI-tct"/>
                                             <outlet property="usernameLabel" destination="Xwr-K6-cc6" id="XXZ-39-nJQ"/>
+                                            <outlet property="videoStaticImageView" destination="Ch1-gx-FQy" id="rzm-JY-Ji0"/>
+                                            <outlet property="watchedView" destination="KLM-m7-s9P" id="kGV-6v-d1t"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -156,6 +192,7 @@
     <resources>
         <image name="TED_three_letter_logo.svg" width="1200" height="441"/>
         <image name="btn-play" width="373" height="373"/>
+        <image name="checked" width="405.09890747070312" height="405.09890747070312"/>
         <image name="v1" width="1910" height="1074"/>
     </resources>
 </document>
