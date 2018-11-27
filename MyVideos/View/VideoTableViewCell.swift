@@ -29,9 +29,20 @@ class VideoTableViewCell: UITableViewCell
             thumbnailImageView.alpha = 0.3
             usernameLabel.alpha = 0.3
             videoStaticImageView.alpha = 0.3
-            UIView.animate(withDuration: 0.6) {
-                self.watchedView.isHidden = false
-            }
+            
+            self.watchedView.isHidden = false
         }
     }
+    
+    // Solution: override prepareForResuse() to restore the cell back to its original state
+    // Uncomment next function to fix the bug
+    
+//    override func prepareForReuse() {
+//        thumbnailImageView.alpha = 1
+//        usernameLabel.alpha = 1
+//        videoStaticImageView.alpha = 1
+//
+//        self.watchedView.isHidden = true
+//    }
+    
 }
